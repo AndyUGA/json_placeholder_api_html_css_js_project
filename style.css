@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+  font-size: 32px;
+}
+
+.user_name {
+  margin: 1rem;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 16px;
+}
