@@ -4,7 +4,7 @@ const apiUrl = `https://jsonplaceholder.typicode.com/users`;
 // Reference to the container where user cards will be displayed
 const userContainer = document.getElementById("jsonPlaceHolder");
 
-// Asynchronous function to fetch fake users
+// Function to fetch users
 async function fetchUsers() {
 
     // Fetch data from the API
@@ -22,8 +22,6 @@ async function fetchUsers() {
         // Create a user card for the current item
         const userCard = createUserCard(user);
 
-        console.log(25, userCard)
-
         // Append the user card to the container in the DOM
         userContainer.appendChild(userCard);
     });
@@ -39,7 +37,6 @@ function createUserCard(user) {
     // Create a new div element for the user card
     const userCard = document.createElement("div");
 
-    // Set the inner HTML of the card
     // Add a css class named "user_name"
     // Dynamically insert the user's name into the HTML
     userCard.innerHTML = `
