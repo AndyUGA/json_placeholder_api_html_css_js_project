@@ -38,9 +38,11 @@ function createUserCard(user) {
     const userCard = document.createElement("div");
 
     // Add a css class named "user_name"
+    userCard.className = "user_name"
+
     // Dynamically insert the user's name into the HTML
     userCard.innerHTML = `
-        <div class = "user_name">${name} - ${email} </div>
+        ${name}
     `;
 
     // Return the created card element
